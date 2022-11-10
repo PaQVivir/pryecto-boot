@@ -1,0 +1,14 @@
+.card{
+    background: linear-gradient(0deg, rgba(251, 233, 18, 1) 2%, rgba(253, 125, 20, 0.8883754185267857) 37%);
+    transition-duration: 2s;
+    transition-timing-function: ease;
+
+    &:hover {
+            box-shadow: $sombra;
+            transform: scale(1.1)
+        }
+    }
+
+.card-title {
+    font-family: $fontfamilyy;
+}

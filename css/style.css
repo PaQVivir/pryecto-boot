@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.text {
+  font-family: "Monoton", cursive;
+}
+
+.titulos {
+  font-family: "Electrolize", sans-serif;
+}
+
+.h5 {
+  font-family: "Electrolize", sans-serif;
+}
+
+.card {
+  background: linear-gradient(0deg, rgb(251, 233, 18) 2%, rgba(253, 125, 20, 0.8883754185) 37%);
+  transition-duration: 2s;
+  transition-timing-function: ease;
+}
+.card:hover {
+  box-shadow: 0px 15px 15px;
+  transform: scale(1.1);
+}
+
+.card-title {
+  font-family: "Electrolize", sans-serif;
+}
+
+.btn-orange {
+  background-color: #fd7e14;
+  color: whitesmoke;
+}
+
+.btn-orange:hover {
+  background-color: white;
+  border: #fd7e14 2px solid;
+  color: #fd7e14;
+}
+
+.navbar-nav .nav-link.active {
+  color: #fd7e14;
+}
+
+.bg-orange {
+  background-color: rgba(253, 125, 20, 0.3568627451);
+}
+
+.dropdown-menu {
+  background-color: rgba(253, 125, 20, 0.3568627451);
+}
+
+.texto {
+  font-family: "Monoton";
+}
+
+/*# sourceMappingURL=style.css.map */
