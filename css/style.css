@@ -22,7 +22,7 @@ ol {
 }
 
 .card {
-  background: linear-gradient(0deg, rgb(251, 233, 18) 2%, rgba(253, 125, 20, 0.8883754185) 37%);
+  background-color: #2a9d8f;
   transition-duration: 2s;
   transition-timing-function: ease;
 }
@@ -36,30 +36,120 @@ ol {
 }
 
 .btn-orange {
-  background-color: #fd7e14;
-  color: whitesmoke;
+  background-color: #a7f7ed;
+  color: rgb(4, 4, 4);
 }
 
 .btn-orange:hover {
   background-color: white;
-  border: #fd7e14 2px solid;
-  color: #fd7e14;
+  border: black 2px solid;
+  color: #2a9d8f;
 }
 
 .navbar-nav .nav-link.active {
-  color: #fd7e14;
+  color: rgba(31, 7, 250, 0.5960784314);
 }
 
 .bg-orange {
-  background-color: rgba(253, 125, 20, 0.3568627451);
+  background-color: #2a9d8f;
 }
 
 .dropdown-menu {
-  background-color: rgba(253, 125, 20, 0.3568627451);
+  background-color: #2a9d8f;
+}
+
+.link {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(28, 28, 28, 0.293);
+  border-radius: 10px;
+  position: relative;
+  transition: 0.4s;
+}
+
+.link:hover {
+  transform: rotate(45deg);
+}
+
+.link::before {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: #373737;
+  border-radius: 10px;
+  transition: opasity 0.2s;
+}
+
+.link:hover::before {
+  opacity: 0.4;
+}
+
+.link:nth-child(1)::before {
+  background: #c32aa3;
+}
+
+.link:nth-child(2)::before {
+  background: #079af6;
+}
+
+.link:nth-child(3)::before {
+  background: #e63946;
+}
+
+.link:nth-child(4)::before {
+  background: #25d366;
+}
+
+.link:hover::before {
+  transform: translate(-4px, -4px);
+  filter: blur(10px);
+}
+
+.link i {
+  font-size: 0.8em;
+  transition: all 0.4s;
+}
+
+.link:hover i {
+  color: #c8c8c8;
+  transform: rotate(-45deg);
+}
+
+.link:hover i.instagram {
+  color: #c32aa3;
+}
+
+.link:hover i.twitter {
+  color: #1da1f2;
+}
+
+.link:hover i.pinterest {
+  color: #e63946;
+}
+
+.link:hover i.whatsapp {
+  color: #25d366;
 }
 
 .texto {
   font-family: "Monoton";
+}
+
+.carousel-item {
+  height: 40vh;
+  width: 500px;
+}
+.carousel-item img {
+  max-width: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
