@@ -21,6 +21,11 @@ ol {
   font-family: "Electrolize", sans-serif;
 }
 
+h2 {
+  text-align: center;
+  font-family: "Electrolize", sans-serif;
+}
+
 .card {
   background-color: #2a9d8f;
   transition-duration: 2s;
@@ -141,15 +146,6 @@ ol {
 
 .texto {
   font-family: "Monoton";
-}
-
-.carousel-item {
-  height: 40vh;
-  width: 500px;
-}
-.carousel-item img {
-  max-width: 100%;
-  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
