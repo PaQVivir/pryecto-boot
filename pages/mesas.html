@@ -54,6 +54,16 @@
     </header>
 
     <main class="container">
+        <!-- Este es nuevo -->
+
+        <section id="logged" class="d-none toggles">
+            <h2>Contenido para usuarios logueados</h2>
+            <p>Te mostramos nuestras mascotas en adopción.</p>
+            <div id="tarjetas" class="card-group"></div>
+        </section>
+
+        <!-- Termina lo nuevo nuevo -->
+        
         <section>
             <h2 class="titulos">Mesas</h2>
             <a href="../pages/producto.html" class="btn btn-orange mb-2">Volver</a>
@@ -61,11 +71,11 @@
 
 
             <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
+                <div id="tarjeta" class="col">
                     <div class="card p-3 cols-4">
-                        <img src="../fotosweb/mesaratonaelevableoferta.jpg" class="card-img-top" alt="racklibrero">
+                        <img src="../fotosweb/mesaratonaelevableoferta.jpg" class="card-img-top" alt="mesaratona">
                         <div class="card-body">
-                            <h3 class="card-title titulos">Mesa Ratona</h3>
+                            <h3 id="nombreMesa" class="card-title titulos">Mesa Ratona</h3>
                             <p class="card-text text-center">Tipo de Materiales: Hierro y Madera a Elección</p>
                             <span>$15000</span>
                             <a class="btn btn-orange d-flex justify-content-center">Comprar</a>
@@ -73,11 +83,11 @@
                     </div>
                 </div>
 
-                <div class="col">
+                <div id="tarjeta" class="col">
                     <div class="card p-3 cols-4">
                         <img src="../fotosweb/mueblereñaca.jpg" class="card-img-top" alt="mueblereñaca">
                         <div class="card-body">
-                            <h3 class="card-title titulos">Mesa Reñaca</h3>
+                            <h3 id="nombreMesa" class="card-title titulos">Mesa Reñaca</h3>
                             <p class="card-text text-center">Tipo de Materiales: Hierro y Madera a Elección</p>
                             <span>$18000</span>
                             <a class="btn btn-orange d-flex justify-content-center">Comprar</a>
@@ -85,11 +95,11 @@
                     </div>
                 </div>
 
-                <div class="col">
+                <div id="tarjeta" class="col">
                     <div class="card p-3 cols-4">
                         <img src="../fotosweb/muebleguadalajara.png" class="card-img-top" alt="muebleguadalajara">
                         <div class="card-body">
-                            <h3 class="card-title titulos">Mesa Guadalajara</h3>
+                            <h3 id="nombreMesa" class="card-title titulos">Mesa Guadalajara</h3>
                             <p class="card-text text-center">Tipo de Materiales: Hierro y Madera a Elección</p>
                             <span>$35000</span>
                             <a class="btn btn-orange d-flex justify-content-center">Comprar</a>
@@ -129,7 +139,8 @@
                         <a href="https://ar.pinterest.com/papelmaderamza/" target="_blank" class="link">
                             <i class="fa-brands fa-pinterest pinterest"></i>
                         </a>
-                        <a href="https://api.whatsapp.com/send/?phone=5492613671345&text&type=phone_number&app_absent=0" target="_blank" class="link">
+                        <a href="https://api.whatsapp.com/send/?phone=5492613671345&text&type=phone_number&app_absent=0"
+                            target="_blank" class="link">
                             <i class="fa-brands fa-whatsapp whatsapp"></i>
                         </a>
                     </div>
@@ -149,8 +160,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"></script>
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
