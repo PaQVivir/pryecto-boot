@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Venta de Muebles Artesanales">
     <meta name="keywords" content="MUEBLES,MADERA,PAPEL MADERA,ARTESANAL,MELAMINA,CALIDAD">
-    <link rel="shortcut icon" href="./fotosweb/papelmaderalogo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../fotosweb/papelmaderalogo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Monoton&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
     <title>Papel Madera</title>
 
@@ -23,7 +23,7 @@
 
         <div class="container">
 
-            <a class="navbar-brand" href="./index.html"><img src="./fotosweb/papelmaderalogo.png" alt="logo"
+            <a class="navbar-brand" href="../index.html"><img src="../fotosweb/papelmaderalogo.png" alt="logo"
                     class="w-75"></a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -34,19 +34,19 @@
             <nav class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                        <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./pages/producto.html">Productos</a>
+                        <a class="nav-link" href="../pages/producto.html">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a href="./pages/carrito.html" target="_blank" class="link">
+                        <a href="" target="_blank" class="link">
                             <i class="fa-solid fa-cart-shopping"></i>
                         </a>
                     </li>
@@ -59,63 +59,22 @@
 
 
     <main>
-        <section class="container">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-6 mt-4">
-                    <img src="./fotosweb/compilado.png" alt="fotosmueble" class="img-fluid">
-                </div>
-
-                <div class="col-lg-6">
-                    <h1 class="display-1 text-center fw-bold texto">Papel Madera</h1>
-                    <p class="text-center">Nuestros muebles son realizados con materiales de primera calidad.
-                        <br> Confeccionados totalmente de manera artesanal. <br>Somos una empresa familiar</b> experta
-                        en fabricación, de muebles.
-                        Contamos con varios años de experiencia en el rubro.<br>Trabajamos con dedicación y
-                        compromiso.
-                    </p>
-                    <div class="d-flex justify-content-center">
-                        <a href="./pages/nosotros.html" class="btn btn-orange">Conoce Mas</a>
-                    </div>
-
-                </div>
-
+                <!-- Elementos generados a partir del JSON -->
+                <main id="items" class="col-sm-8 row"></main>
+                <!-- Carrito -->
+                <aside class="col-sm-4">
+                    <h2>Carrito</h2>
+                    <!-- Elementos del carrito -->
+                    <ul id="carrito" class="list-group"></ul>
+                    <hr>
+                    <!-- Precio total -->
+                    <p class="text-right">Total: <span id="total"></span>&dollar;;</p>
+                    <button id="boton-vaciar" class="btn btn-primary">Vaciar</button>
+                </aside>
             </div>
-
-        </section>
-
-        <section class="container">
-            <div class="row">
-                <div class="col-lg-6 mt-5 order-lg-last">
-                    <img class="img-fluid " src="./fotosweb/como limpiar muebles.png" alt="comolimpiarmueble">
-                </div>
-
-                <div class="col-lg-6 mt-4">
-                    <div class="m-2">
-                        <h2 class="display-4">Como Cuidar Tus Muebles?</h2>
-                        <p>Consejos para su mantención:
-                            <li>Nunca uses amoníaco porque es abrasivo y terminan quitando el brillo y el color a tus
-                                muebles. Si el mobiliario está barnizado, tampoco uses productos que contengan acetonas
-                                o disolventes ya que dañarían la superficie.</li>
-
-                            <li>Siempre usa un paño limpio seco (preferiblemente de algodón o microfibra para no rallar
-                                la superficie del mueble) o que esté ligeramente humedecido con agua.</li>
-                            <li>Limpia siempre en el sentido de la veta y sin restregar. Trata de proteger toda la
-                                belleza de la madera natural.</li>
-                            <li>No te olvides nunca de secar el mueble muy bien con un trapo suave y seco para que no se
-                                humedezca la madera.</li>
-                            <li>Evitar exponerlos a la luz directa del sol. El calor puede dañar la superficie del
-                                mueble, estropear ceras y barnices, además de su color y su brillo. Por lo mismo,
-                                tampoco debes poner objetos calientes sobre la madera.</li>
-                            ¡¡Luce tus muebles de madera o melamina siempre limpios y relucientes!!
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
+        </div>
     </main>
 
 
@@ -151,7 +110,8 @@
                         <a href="https://ar.pinterest.com/papelmaderamza/" target="_blank" class="link">
                             <i class="fa-brands fa-pinterest pinterest"></i>
                         </a>
-                        <a href="https://api.whatsapp.com/send/?phone=5492613671345&text&type=phone_number&app_absent=0" target="_blank" class="link">
+                        <a href="https://api.whatsapp.com/send/?phone=5492613671345&text&type=phone_number&app_absent=0"
+                            target="_blank" class="link">
                             <i class="fa-brands fa-whatsapp whatsapp"></i>
                         </a>
                     </div>
@@ -173,7 +133,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
-    
+
     <script src="main.js"></script>
 
 </body>
