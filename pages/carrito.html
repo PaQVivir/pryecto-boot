@@ -58,10 +58,9 @@
     </header>
 
 
-    <main>
+    <main class="cuerpo">
         <div class="container">
             <div class="row">
-                <!-- Elementos generados a partir del JSON -->
                 <main id="items" class="col-sm-8 row"></main>
                 <!-- Carrito -->
                 <aside class="col-sm-4">
@@ -70,10 +69,53 @@
                     <ul id="carrito" class="list-group"></ul>
                     <hr>
                     <!-- Precio total -->
-                    <p class="text-right">Total: <span id="total"></span>&dollar;;</p>
-                    <button id="boton-vaciar" class="btn btn-primary">Vaciar</button>
+                    <p class="text-right">Total: &dollar; <span id="total"></span></p>
+                    <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+                    <button id="boton-comprar" class="btn btn-orange">Comprar</button>
+                    <hr>
+                    <!-- Conversor -->
+                    <h2>Conversor de Moneda</h2>
+                    <h5>Tipo de cambio sin impuestos</h5>
+                    <div class="moneda">
+                        <select id="moneda-uno">
+
+                            <option value="ARS" selected>PESO ARGENTINO</option>
+                            <option value="BRL">REALES</option>
+                            <option value="CLP">PESO CHILENO</option>
+                            <option value="EUR">EURO</option>
+                            <option value="USD">USD</option>
+                            <option value="UYU">PESO URUGUAY</option>
+
+
+                        </select>
+                        <input type="number" id="cantidad-uno" placeholder="0" value="1">
+                    </div>
+
+                    <div class="taza-cambio-container">
+                        <button class="btn-cambio" id="taza">
+                            cambio
+                        </button>
+                        <div class="cambio" id="cambio"></div>
+                    </div>
+
+                    <div class="moneda">
+                        <select id="moneda-dos">
+
+                            <option value="ARS">PESO ARGENTINO</option>
+                            <option value="BRL">REALES</option>
+                            <option value="CLP">PESO CHILENO</option>
+                            <option value="EUR">EURO</option>
+                            <option value="USD" selected>USD</option>
+                            <option value="UYU">PESO URUGUAY</option>
+
+                        </select>
+                        <input type="number" id="cantidad-dos" placeholder="0">
+                    </div>
+
                 </aside>
             </div>
+
+
         </div>
     </main>
 
@@ -134,7 +176,10 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
 
-    <script src="main.js"></script>
+    <script src="../js/carrito.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/conversor.js"></script>
+
 
 </body>
 

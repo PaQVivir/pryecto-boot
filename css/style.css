@@ -21,9 +21,21 @@ ol {
   font-family: "Electrolize", sans-serif;
 }
 
-h2 {
+.h2 {
   text-align: center;
   font-family: "Electrolize", sans-serif;
+}
+
+.cuerpo {
+  background: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding:30px;
+}
+.cardcarro {
+  margin: 0px;
 }
 
 .card {
@@ -148,4 +160,45 @@ h2 {
   font-family: "Monoton";
 }
 
-/*# sourceMappingURL=style.css.map */
+/*Estilizacion caja cambio */
+
+.cambio{
+    font-size: 14px;
+    padding: 0 10px;
+    font-weight: 600;
+}
+.btn-cambio{
+  color: rgb(17, 17, 17);
+  background: #2a9d8f;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 5px 12px;
+}
+.moneda{
+  padding: 40px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.moneda select{
+  padding: 10px 20px 10px 10px;
+  border: 1px solid #f604045c;
+  font-size: 16px;
+  
+}
+
+.moneda input {
+  border: 0;
+  font-size: 30px;
+  text-align: center;
+  color: #079af6;
+}
+
+.taza-cambio-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+

@@ -1,4 +1,4 @@
-const usuarios = [{
+const usuario = [{
     nombre: 'Leo',
     mail: 'leosolo@gmail.com',
     pass: 'felipe'
@@ -52,7 +52,7 @@ function saludar(usuario) {
 }
 
 
-function mostrarMasRacks(array) {
+function mostrarMasMesas(array) {
     contTarjetas.innerHTML = '';
     array.forEach(element => {
         let html = `<div class="card p-3 cols-4" id="tarjeta${element.nombre}">
@@ -80,7 +80,7 @@ btnLogin.addEventListener('click', (e) => {
         alert('Todos los campos son requeridos');
     } else {
 
-        let data = validarUsuario(usuarios, mailLogin.value, passLogin.value);
+        let data = validarUsuario(usuario, mailLogin.value, passLogin.value);
 
         if (!data) {
             alert(`Usuario y/o contraseña erróneos`);
@@ -97,7 +97,7 @@ btnLogin.addEventListener('click', (e) => {
 
             modal.hide();
 
-            mostrarInfoMascota(mascotas);
+            
             presentarInfo(toggles, 'd-none');
         }
     }
@@ -121,7 +121,7 @@ btnLogout.addEventListener('click', () => {
 function estaLogueado(usuario) {
     if (usuario) {
         saludar(usuario);
-        mostrarInfoMascota(mascotas);
+        mostrarMasRacks(    mesas);
         presentarInfo(toggles, 'd-none');
     }
 }
